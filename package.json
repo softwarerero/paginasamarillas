@@ -1,0 +1,24 @@
+{
+  "name": "wochenblatt.cc",
+  "description": "Branchenbuch",
+  "author": "SUNCOM Systems",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": "~1.7.1",
+    "less-brunch": "~1.7.0",
+    "coffee-script-brunch": "~1.7.2",
+    "gzip-brunch": "~1.0.0",
+    "imageoptmizer-brunch": "0.0.3",
+    "jade-brunch": "~1.7.2",
+    "static-jade-brunch": "~1.4.11",
+    "auto-reload-brunch": "~1.7.1"
+  }
+}

@@ -1,0 +1,80 @@
+include _include/_defaultLayout.jade
+!!!
+html(lang="es")
+  head
+    mixin head()
+
+    title Páginas Amarillas / Guía de Industria
+
+  body
+    noscript
+      p Esta página necesita JavaScript!
+    #wrap
+      .pure-g-r
+        mixin menu()
+      .pure-u-1-1
+        .container
+          .mainArea
+            label(id="filter1Lable" for="filter1") Filtro
+            input(type="text" name="filter1" value="" id="filter1")
+            div(id="facets" class="highlight")
+            .pure-g-r
+              .pure-u-1-1
+                table(id="firmenTable" class=" pure-table-striped")
+                  thead
+                    tr
+                      //th ID
+                      th(id="orderby_branche" class="orderbyitem") Rubro
+                      th(id="orderby_name" class="orderbyitem") Nombre
+                      th(id="orderby_adresse" class="orderbyitem") Dirección
+                      th(id="orderby_stadt" class="orderbyitem") Ciudad
+                      th Teléfono
+                      //th Telefon 2
+                      th Email
+                      //th Webseite
+                      //th Facebook
+                      //th Twitter
+                      //th Beschreibung
+                      //th Öffnungszeiten
+                  tbody(id="results")
+
+    #firmaDialog
+      //h3 Basic Modal Dialog
+      //p For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).
+      img.logo
+      dl
+        //dt Branche
+        //dd.branche
+        //dt Name
+        //dd.name
+        //dt Adresse
+        //dd.adresse
+        //dt Stadt
+        //dd.stadt
+        //dt Telefon 1
+        //dd.telefon1
+        //dt Telefon 2
+        //dd.telefon2
+        //dt Email
+        //dd.email
+        //dt Webseite
+        //dd.webseite
+        //dt Facebook
+        //dd.facebook
+        //dt Twitter
+        //dd.twitter
+        //dt Öffnungszeiten
+        //dd.öffnungszeiten
+        //dt Beschreibung
+        //dd.beschreibung
+        //dt Deutsch
+        //dd.deutsch
+        //dt Englisch
+        //dd.englisch
+
+    // preload the images
+    //div(style='display:none')
+      <img src='img/basic/x.png' alt='' />
+
+
+  mixin footer()

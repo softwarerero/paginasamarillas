@@ -6,6 +6,7 @@ exports.config =
       order:
         before: [
           'app/stylesheets/pure.css'
+          'app/stylesheets/leaflet.css'
         ]
         after: [
           'app/stylesheets/branchenbuch.less'
@@ -20,10 +21,12 @@ exports.config =
           'vendor/scripts/zepto-fx.js',
           'vendor/scripts/underscore.js',
           'vendor/scripts/facetedsearch.js'
-          
+          'vendor/scripts/T9n.js'
+          'vendor/scripts/leaflet.js'
         ]
         after: [
           'vendor/scripts/firmen.js',
+          'vendor/scripts/cookies.js'
           'vendor/scripts/branchenbuch.js'
         ]
 

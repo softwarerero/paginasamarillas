@@ -25,7 +25,6 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <link href="/img/favicon.ico" rel="shortcut icon"/>
     <link rel="stylesheet" href="/stylesheets/app.css"/>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>-->
     <script src="/javascripts/app.js"></script>
     <title>Precios</title>
   </head>
@@ -34,21 +33,25 @@
       <div class="pure-g-r">
         <div class="pure-u-1-1 menuline1">
           <div class="container"><span class="pull-left">
-              <!--a(href='http://wochenblatt.cc/')--><img src="/img/logo.png" alt="logo" class="logo"/></span><span class="pull-right">
-              <h1> <a href="/">Páginas Amarillas / Guía de Industria</a></h1><span id="menubar">
+              <!--a(href='http://wochenblatt.cc/')--><img src="/img/logo_ahk_paraguay.gif" alt="logo" class="logo"/></span><span class="pull-right menuRight">
+              <h1> 
+                <!--a(href="/") Páginas Amarillas / Guía de Industria--><a href="/" data-t9n="app.title">Páginas Amarillas / Guía de Industria</a>
+              </h1><span id="menubar">
                 <ul id="nav">
-                  <li><a href="/">Inicio</a></li>
-                  <li><a href="/precios.html">Precios</a></li>
+                  <li><a href="/" data-t9n="app.home">Inicio</a></li>
+                  <li><a href="/precios.html" data-t9n="app.preise">Precios</a></li>
+                  <li class="pull-right"><a data-language="es" href="" class="switchLanguage">Español</a></li>
+                  <li class="pull-right"><a data-language="de" href="" class="switchLanguage">Deutsch</a></li>
                 </ul></span></span></div>
         </div>
       </div>
       <div class="pure-u-1-1">
         <div class="container">
-          <h1>Precios</h1>
-          <p>Todos los precios en Guaranies más IVA vigente (10% en Enero 2015). </p>
+          <h1 data-t9n="app.preise">Precios</h1>
+          <p data-t9n="preise.text">Todos los precios en Guaranies más IVA vigente (10% en Enero 2015). </p>
           <ul>
             <!--li Anzeige für einen Monat: 30.000-->
-            <li>Publicación para un año: 300.000</li>
+            <li data-t9n="preise.preis1">Publicación para un año: 300.000</li>
           </ul>
         </div>
       </div>

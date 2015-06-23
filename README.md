@@ -1,4 +1,4 @@
-# Copia en Español de Branchenbuch für Wochenbaltt
+# Copia en Español de Branchenbuch für Wochenblatt
 
 # Tech Stack
 http://brunch.io/
@@ -7,6 +7,9 @@ http://brunch.io/
 
 ## Send Email
 https://github.com/andris9/Nodemailer
+
+## Maps
+http://leafletjs.com/reference.html
 
 ## Search for now
 https://github.com/eikes/facetedsearch

@@ -25,9 +25,9 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <link href="/img/favicon.ico" rel="shortcut icon"/>
     <link rel="stylesheet" href="/stylesheets/app.css"/>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>-->
     <script src="/javascripts/app.js"></script>
-    <title>Páginas Amarillas / Guía de Industria</title>
+    <title data-t9n="app.title">Páginas Amarillas / Guía de Industria</title>
+    <!--title T9n 't9nLanguage'-->
   </head>
   <body>
     <noscript>
@@ -37,18 +37,22 @@
       <div class="pure-g-r">
         <div class="pure-u-1-1 menuline1">
           <div class="container"><span class="pull-left">
-              <!--a(href='http://wochenblatt.cc/')--><img src="/img/logo.png" alt="logo" class="logo"/></span><span class="pull-right">
-              <h1> <a href="/">Páginas Amarillas / Guía de Industria</a></h1><span id="menubar">
+              <!--a(href='http://wochenblatt.cc/')--><img src="/img/logo_ahk_paraguay.gif" alt="logo" class="logo"/></span><span class="pull-right menuRight">
+              <h1> 
+                <!--a(href="/") Páginas Amarillas / Guía de Industria--><a href="/" data-t9n="app.title">Páginas Amarillas / Guía de Industria</a>
+              </h1><span id="menubar">
                 <ul id="nav">
-                  <li><a href="/">Inicio</a></li>
-                  <li><a href="/precios.html">Precios</a></li>
+                  <li><a href="/" data-t9n="app.home">Inicio</a></li>
+                  <li><a href="/precios.html" data-t9n="app.preise">Precios</a></li>
+                  <li class="pull-right"><a data-language="es" href="" class="switchLanguage">Español</a></li>
+                  <li class="pull-right"><a data-language="de" href="" class="switchLanguage">Deutsch</a></li>
                 </ul></span></span></div>
         </div>
       </div>
       <div class="pure-u-1-1">
         <div class="container">
           <div class="mainArea">
-            <label id="filter1Lable" for="filter1">Filtro</label>
+            <label id="filter1Lable" for="filter1" data-t9n="app.filtro">Filtro</label>
             <input type="text" name="filter1" value="" id="filter1">
             <div id="facets" class="highlight"></div>
             <div class="pure-g-r">
@@ -57,18 +61,12 @@
                   <thead>
                     <tr>
                       <!--th ID-->
-                      <th id="orderby_branche" class="orderbyitem">Rubro</th>
-                      <th id="orderby_name" class="orderbyitem">Nombre</th>
-                      <th id="orderby_adresse" class="orderbyitem">Dirección</th>
-                      <th id="orderby_stadt" class="orderbyitem">Ciudad</th>
-                      <th>Teléfono</th>
-                      <!--th Telefon 2-->
-                      <th>Email</th>
-                      <!--th Webseite-->
-                      <!--th Facebook-->
-                      <!--th Twitter-->
-                      <!--th Beschreibung-->
-                      <!--th Öffnungszeiten-->
+                      <th id="orderby_branche" data-t9n="branche" class="orderbyitem">Rubro</th>
+                      <th id="orderby_name" data-t9n="name" class="orderbyitem">Nombre</th>
+                      <th id="orderby_adresse" data-t9n="adresse" class="orderbyitem">Dirección</th>
+                      <th id="orderby_stadt" data-t9n="stadt" class="orderbyitem">Ciudad</th>
+                      <th data-t9n="telefon1">Teléfono</th>
+                      <th data-t9n="email">Email</th>
                     </tr>
                   </thead>
                   <tbody id="results"></tbody>
@@ -79,39 +77,9 @@
         </div>
       </div>
     </div>
-    <div id="firmaDialog">
-      <!--h3 Basic Modal Dialog-->
-      <!--p For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).--><img class="logo">
-      <dl>
-        <!--dt Branche-->
-        <!--dd.branche-->
-        <!--dt Name-->
-        <!--dd.name-->
-        <!--dt Adresse-->
-        <!--dd.adresse-->
-        <!--dt Stadt-->
-        <!--dd.stadt-->
-        <!--dt Telefon 1-->
-        <!--dd.telefon1-->
-        <!--dt Telefon 2-->
-        <!--dd.telefon2-->
-        <!--dt Email-->
-        <!--dd.email-->
-        <!--dt Webseite-->
-        <!--dd.webseite-->
-        <!--dt Facebook-->
-        <!--dd.facebook-->
-        <!--dt Twitter-->
-        <!--dd.twitter-->
-        <!--dt Öffnungszeiten-->
-        <!--dd.öffnungszeiten-->
-        <!--dt Beschreibung-->
-        <!--dd.beschreibung-->
-        <!--dt Deutsch-->
-        <!--dd.deutsch-->
-        <!--dt Englisch-->
-        <!--dd.englisch-->
-      </dl>
+    <div id="firmaDialog"><img class="logo">
+      <dl></dl>
+      <div id="firmaKarte"></div>
     </div>
     <!-- preload the images-->
     <!--div(style='display:none')<img src='img/basic/x.png' alt='' />
@@ -119,6 +87,6 @@
   </body>
   <p>&nbsp;</p>
   <div class="footer pure-u-1-1">
-    <div class="container"><span class="pull-left">&copy; 2014 SUNCOM Systems  <i class="icon-phone service-icon"> </i>+595 982 868 254</span><span class="pull-right">Desarrollo  <a href="http://sun.com.py/html/es/index.html">SUNCOM Systems </a></span></div>
+    <div class="container"><span class="pull-left">&copy; 2015 SUNCOM Systems  <i class="icon-phone service-icon"> </i>+595 982 868 254</span><span class="pull-right"><span data-t9n="app.entwicklung">Desarrollo  </span><a href="http://sun.com.py/html/es/index.html">SUNCOM Systems </a></span></div>
   </div>
 </html>

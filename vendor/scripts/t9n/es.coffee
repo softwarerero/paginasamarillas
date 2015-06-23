@@ -12,7 +12,7 @@ es =
   preise:
     text: 'Todos los precios en Guaranies más IVA vigente (10% en Enero 2015).'
     preis1: 'Publicación para un año: 300.000'
-
+ 
   branche: 'Rubro'
   stadt: 'Ciudad'
   name: 'Nombre'
